@@ -2,20 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .button {
+    @apply flex items-center w-max gap-x-2 text-sm font-medium p-3 rounded-lg transition-colors;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .solid_button {
+    @apply bg-zinc-950 text-zinc-50 hover:bg-zinc-900;
+  }
+
+  .outline_button {
+    @apply text-zinc-800 border border-zinc-300 hover:bg-zinc-100;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .main_wrapper {
+    @apply w-full max-w-3xl mx-auto px-4;
+  }
+
+  .primary_link {
+    @apply text-blue-600 underline transition-colors hover:text-blue-500
+  }
+
+  .text_hover {
+    @apply text-zinc-800 transition-colors hover:text-zinc-900
+  }
 }
