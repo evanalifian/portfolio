@@ -1,6 +1,7 @@
 import { FileUser } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { techs } from "@/data.json"
 
 export default function Home() {
   return (
@@ -54,45 +55,7 @@ function GetToKnowMe() {
   );
 }
 
-function TechStacks() {
-  const techs = [
-    {
-      name: "HTML",
-      icon: "/techs/html.svg",
-      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    },
-    {
-      name: "CSS",
-      icon: "/techs/css.svg",
-      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    },
-    {
-      name: "JavaScript",
-      icon: "/techs/javascript.svg",
-      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
-      name: "React.js",
-      icon: "/techs/react.svg",
-      link: "https://react.dev/",
-    },
-    {
-      name: "Tailwind CSS",
-      icon: "/techs/tailwind-css.svg",
-      link: "https://tailwindcss.com/",
-    },
-    {
-      name: "Bootstrap",
-      icon: "/techs/bootstrap.svg",
-      link: "https://getbootstrap.com/",
-    },
-    {
-      name: "React Router",
-      icon: "/techs/react-router.svg",
-      link: "https://reactrouter.com/",
-    },
-  ];
-
+async function TechStacks() {
   return (
     <div>
       <h2>Tech Stacks I Usually Use</h2>
