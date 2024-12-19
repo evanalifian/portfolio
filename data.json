@@ -1,0 +1,96 @@
+{
+  "techs": [
+    {
+      "name": "HTML",
+      "icon": "/techs/html.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      "name": "CSS",
+      "icon": "/techs/css.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "/techs/javascript.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "React.js",
+      "icon": "/techs/react.svg",
+      "link": "https://react.dev/"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "/techs/tailwind-css.svg",
+      "link": "https://tailwindcss.com/"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "/techs/bootstrap.svg",
+      "link": "https://getbootstrap.com/"
+    },
+    {
+      "name": "React Router",
+      "icon": "/techs/react-router.svg",
+      "link": "https://reactrouter.com/"
+    }
+  ],
+  "socials": [
+    {
+      "name": "Instagram",
+      "link": "https://instagram.com/evanalifian"
+    },
+    {
+      "name": "X",
+      "link": "https://x.com/evanalifian"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/evanalifian"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Algoflows",
+      "desc": "An algorithm visualtization web.",
+      "img": "/projects/algoflows.png",
+      "link": "https://algoflows.vercel.app/",
+      "techs": [
+        {
+          "name": "HTML",
+          "icon": "/techs/html.svg",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "/techs/javascript.svg",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "/techs/tailwind-css.svg",
+          "link": "https://tailwindcss.com/"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "desc": "Evan Alifian's portfolio website.",
+      "img": "/projects/portfolio.png",
+      "link": "https://github.com/evanalifian/",
+      "techs": [
+        {
+          "name": "Next.js",
+          "icon": "/techs/next.svg",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "/techs/tailwind-css.svg",
+          "link": "https://tailwindcss.com/"
+        }
+      ]
+    }
+  ]
+}
