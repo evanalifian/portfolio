@@ -1,5 +1,6 @@
 import { Github, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
+import { socials } from "@/data.json"
 
 export default function Footer() {
   return (
@@ -7,17 +8,26 @@ export default function Footer() {
       <div className="main_wrapper py-4 mt-24">
         <p className="text-sm text-center">Built with 💓 by evanalifian</p>
         <div className="flex gap-x-4 justify-center">
-          <Link href={"https://instagram.com/evanalifian"} target="_blank" className="text_hover">
-            <Instagram strokeWidth={2.25} size={18} />
-          </Link>
-          <Link href={"https://x.com/evanalifian"} target="_blank" className="text_hover">
-            <Twitter strokeWidth={2.25} size={18} />
-          </Link>
-          <Link href={"https://github.com/evanalifian"} target="_blank" className="text_hover">
-            <Github strokeWidth={2.25} size={18} />
-          </Link>
+          {socials.map(social => (
+            <Link key={social.name} href={social.link} target="_blank" className="text_hover">
+              <ConditionalIcons socialName={social.name} />
+            </Link>
+          ))}
         </div>
       </div>
     </footer>
   );
+}
+
+function ConditionalIcons({ socialName }) {
+  switch (socialName.toLowerCase()) {
+    case "instagram":
+      return <Instagram strokeWidth={2.25} size={18} />
+    case "x":
+      return <Twitter strokeWidth={2.25} size={18} />
+    case "github":
+      return <Github strokeWidth={2.25} size={18} />
+    default:
+      break;
+  }
 }
