@@ -1,6 +1,7 @@
 import { Github, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 import { socials } from "@/data.json"
+import os from "os"
 
 export default function Footer() {
   return (
@@ -14,6 +15,7 @@ export default function Footer() {
             </Link>
           ))}
         </div>
+        <p>{os.homedir()}</p>
       </div>
     </footer>
   );
