@@ -27,7 +27,7 @@ function Welcome() {
           React.js, TailwindCSS, and Next.js.
         </p>
         <div className="flex items-center gap-x-4">
-          <Link href={""} className="button solid_button">
+          <Link href={"/evanalifian-resume.pdf"} className="button solid_button">
             <FileUser size={18} />
             Resume
           </Link>
