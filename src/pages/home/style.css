@@ -1,0 +1,5 @@
+@media (width >= 64rem /* 10024px  */) {
+  #box::after {
+    background-image: url('../../assets/evan.png');
+  }
+}
