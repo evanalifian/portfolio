@@ -16,7 +16,7 @@ export const navigation = {
   more: [
     {
       name: "Blog",
-      url: "",
+      url: "https://blog-evanalifian.vercel.app",
     },
   ],
 };
